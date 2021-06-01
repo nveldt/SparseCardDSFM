@@ -1,0 +1,216 @@
+\begin{table}[t]
+    	\caption{Results for Stackoverflow clusters from size 2018 to size 2536.}
+    	\label{tab:stackmore1}
+    	\centering
+    	\begin{tabular}{l l l l l l}
+    		\toprule
+    		Cluster & Size & Penalty & F1 & Runtime  &\# Best \\
+\midrule system-verilog & 2018 & $\delta$-linear &\textbf{0.555}  \f{$\pm0.02$} & \textbf{5.9} \f{$\pm3.8$} & \textbf{7} \\
+& & clique &{0.546}  \f{$\pm0.02$} & 8.0 \f{$\pm2.0$} & 0 \\
+& & sqrt &{0.456}  \f{$\pm0.05$} & 7.4 \f{$\pm2.2$} & 0 \\
+& & $x^{0.9}$ &{0.552}  \f{$\pm0.01$} & 6.2 \f{$\pm0.8$} & 3 \\
+\midrule abap & 2056 & $\delta$-linear &{0.508}  \f{$\pm0.12$} & 11.8 \f{$\pm9.0$} & 3 \\
+& & clique &{0.549}  \f{$\pm0.06$} & 12.9 \f{$\pm7.0$} & 0 \\
+& & sqrt &{0.382}  \f{$\pm0.07$} & 20.4 \f{$\pm12.5$} & 0 \\
+& & $x^{0.9}$ &\textbf{0.557}  \f{$\pm0.06$} & \textbf{9.8} \f{$\pm5.4$} & \textbf{7} \\
+\midrule axapta & 2074 & $\delta$-linear &{0.766}  \f{$\pm0.05$} & \textbf{22.4} \f{$\pm13.3$} & 0 \\
+& & clique &\textbf{0.781}  \f{$\pm0.04$} & 23.6 \f{$\pm15.2$} & \textbf{9} \\
+& & sqrt &{0.565}  \f{$\pm0.09$} & 41.6 \f{$\pm31.2$} & 0 \\
+& & $x^{0.9}$ &{0.764}  \f{$\pm0.05$} & 26.1 \f{$\pm16.8$} & 1 \\
+\midrule apache-nifi & 2092 & $\delta$-linear &{0.572}  \f{$\pm0.06$} & \textbf{6.7} \f{$\pm2.1$} & 1 \\
+& & clique &{0.601}  \f{$\pm0.07$} & 7.6 \f{$\pm1.6$} & 3 \\
+& & sqrt &{0.419}  \f{$\pm0.13$} & 8.4 \f{$\pm1.6$} & 0 \\
+& & $x^{0.9}$ &\textbf{0.605}  \f{$\pm0.07$} & 6.9 \f{$\pm1.2$} & \textbf{6} \\
+\midrule google-sheets-formula & 2142 & $\delta$-linear &{0.587}  \f{$\pm0.19$} & \textbf{4.9} \f{$\pm1.0$} & 1 \\
+& & clique &\textbf{0.601}  \f{$\pm0.19$} & 8.7 \f{$\pm2.0$} & \textbf{7} \\
+& & sqrt &{0.415}  \f{$\pm0.13$} & 8.2 \f{$\pm2.6$} & 0 \\
+& & $x^{0.9}$ &{0.569}  \f{$\pm0.17$} & 5.7 \f{$\pm1.0$} & 2 \\
+\midrule office-js & 2402 & $\delta$-linear &\textbf{0.578}  \f{$\pm0.04$} & \textbf{7.2} \f{$\pm2.0$} & \textbf{9} \\
+& & clique &{0.557}  \f{$\pm0.05$} & 7.7 \f{$\pm1.2$} & 0 \\
+& & sqrt &{0.421}  \f{$\pm0.05$} & 9.1 \f{$\pm2.2$} & 0 \\
+& & $x^{0.9}$ &{0.568}  \f{$\pm0.04$} & 7.8 \f{$\pm1.1$} & 1 \\
+\midrule netlogo & 2520 & $\delta$-linear &{0.868}  \f{$\pm0.01$} & \textbf{20.8} \f{$\pm12.1$} & 2 \\
+& & clique &\textbf{0.869}  \f{$\pm0.01$} & 22.0 \f{$\pm15.2$} & \textbf{6} \\
+& & sqrt &{0.726}  \f{$\pm0.15$} & 34.3 \f{$\pm20.5$} & 0 \\
+& & $x^{0.9}$ &{0.866}  \f{$\pm0.02$} & 23.0 \f{$\pm14.3$} & 2 \\
+\midrule dax & 2528 & $\delta$-linear &{0.424}  \f{$\pm0.03$} & \textbf{7.3} \f{$\pm2.3$} & 0 \\
+& & clique &\textbf{0.436}  \f{$\pm0.04$} & 8.3 \f{$\pm1.0$} & \textbf{10} \\
+& & sqrt &{0.342}  \f{$\pm0.05$} & 9.1 \f{$\pm2.4$} & 0 \\
+& & $x^{0.9}$ &{0.425}  \f{$\pm0.04$} & 8.0 \f{$\pm1.1$} & 0 \\
+\midrule plone & 2536 & $\delta$-linear &\textbf{0.243}  \f{$\pm0.14$} & \textbf{2.8} \f{$\pm0.3$} & \textbf{7} \\
+& & clique &{0.241}  \f{$\pm0.14$} & 5.2 \f{$\pm0.9$} & 3 \\
+& & sqrt &{0.102}  \f{$\pm0.04$} & 8.0 \f{$\pm2.0$} & 0 \\
+& & $x^{0.9}$ &{0.155}  \f{$\pm0.1$} & 4.2 \f{$\pm0.5$} & 0 \\
+\bottomrule \end{tabular}
+\end{table} 
+\begin{table}[t]
+    	\caption{Results for Stackoverflow clusters from size 2574 to size 3506.}
+    	\label{tab:stackmore2}
+    	\centering
+    	\begin{tabular}{l l l l l l}
+    		\toprule
+    		Cluster & Size & Penalty & F1 & Runtime  &\# Best \\
+\midrule netsuite & 2574 & $\delta$-linear &{0.735}  \f{$\pm0.06$} & 28.8 \f{$\pm18.7$} & 4 \\
+& & clique &{0.733}  \f{$\pm0.07$} & 28.5 \f{$\pm17.1$} & 1 \\
+& & sqrt &{0.512}  \f{$\pm0.12$} & 37.5 \f{$\pm24.1$} & 0 \\
+& & $x^{0.9}$ &\textbf{0.738}  \f{$\pm0.07$} & \textbf{28.1} \f{$\pm18.1$} & \textbf{5} \\
+\midrule jq & 2596 & $\delta$-linear &\textbf{0.557}  \f{$\pm0.14$} & \textbf{3.8} \f{$\pm1.0$} & \textbf{10} \\
+& & clique &{0.501}  \f{$\pm0.14$} & 5.7 \f{$\pm0.9$} & 0 \\
+& & sqrt &{0.355}  \f{$\pm0.09$} & 8.0 \f{$\pm1.7$} & 0 \\
+& & $x^{0.9}$ &{0.255}  \f{$\pm0.13$} & 4.7 \f{$\pm0.7$} & 0 \\
+\midrule marklogic & 2612 & $\delta$-linear &\textbf{0.67}  \f{$\pm0.14$} & \textbf{4.7} \f{$\pm1.2$} & \textbf{7} \\
+& & clique &{0.653}  \f{$\pm0.15$} & 7.1 \f{$\pm1.6$} & 2 \\
+& & sqrt &{0.373}  \f{$\pm0.12$} & 8.7 \f{$\pm1.8$} & 0 \\
+& & $x^{0.9}$ &{0.659}  \f{$\pm0.14$} & 5.7 \f{$\pm0.4$} & 1 \\
+\midrule alfresco & 2694 & $\delta$-linear &{0.576}  \f{$\pm0.13$} & \textbf{13.0} \f{$\pm7.6$} & 1 \\
+& & clique &\textbf{0.59}  \f{$\pm0.11$} & 15.5 \f{$\pm7.9$} & \textbf{9} \\
+& & sqrt &{0.429}  \f{$\pm0.09$} & 20.4 \f{$\pm9.3$} & 0 \\
+& & $x^{0.9}$ &{0.552}  \f{$\pm0.18$} & 15.0 \f{$\pm8.5$} & 0 \\
+\midrule lotus-notes & 2877 & $\delta$-linear &\textbf{0.417}  \f{$\pm0.06$} & \textbf{4.4} \f{$\pm1.3$} & \textbf{9} \\
+& & clique &{0.379}  \f{$\pm0.06$} & 5.5 \f{$\pm0.9$} & 0 \\
+& & sqrt &{0.344}  \f{$\pm0.06$} & 8.5 \f{$\pm1.5$} & 0 \\
+& & $x^{0.9}$ &{0.386}  \f{$\pm0.06$} & 5.1 \f{$\pm0.6$} & 1 \\
+\midrule stata & 2907 & $\delta$-linear &{0.798}  \f{$\pm0.05$} & \textbf{6.6} \f{$\pm1.4$} & 1 \\
+& & clique &\textbf{0.798}  \f{$\pm0.05$} & 10.0 \f{$\pm2.0$} & \textbf{5} \\
+& & sqrt &{0.454}  \f{$\pm0.05$} & 9.2 \f{$\pm2.4$} & 0 \\
+& & $x^{0.9}$ &{0.792}  \f{$\pm0.05$} & 8.6 \f{$\pm1.6$} & 4 \\
+\midrule wso2esb & 2912 & $\delta$-linear &{0.303}  \f{$\pm0.05$} & 7.8 \f{$\pm6.6$} & 2 \\
+& & clique &\textbf{0.325}  \f{$\pm0.09$} & 8.7 \f{$\pm5.0$} & \textbf{4} \\
+& & sqrt &{0.214}  \f{$\pm0.08$} & 11.6 \f{$\pm5.9$} & 0 \\
+& & $x^{0.9}$ &{0.325}  \f{$\pm0.1$} & \textbf{7.3} \f{$\pm2.7$} & 4 \\
+\midrule mdx & 3007 & $\delta$-linear &{0.365}  \f{$\pm0.12$} & 8.4 \f{$\pm4.2$} & 0 \\
+& & clique &{0.536}  \f{$\pm0.04$} & 8.9 \f{$\pm3.3$} & 2 \\
+& & sqrt &{0.45}  \f{$\pm0.04$} & 9.5 \f{$\pm3.4$} & 0 \\
+& & $x^{0.9}$ &\textbf{0.569}  \f{$\pm0.03$} & \textbf{7.5} \f{$\pm1.8$} & \textbf{8} \\
+\midrule docusignapi & 3348 & $\delta$-linear &{0.82}  \f{$\pm0.01$} & \textbf{37.8} \f{$\pm12.9$} & 1 \\
+& & clique &{0.82}  \f{$\pm0.01$} & 41.3 \f{$\pm16.5$} & 0 \\
+& & sqrt &{0.803}  \f{$\pm0.06$} & 53.7 \f{$\pm21.8$} & \textbf{6} \\
+& & $x^{0.9}$ &\textbf{0.821}  \f{$\pm0.0$} & 41.7 \f{$\pm12.8$} & 3 \\
+\midrule xslt-2.0 & 3426 & $\delta$-linear &\textbf{0.221}  \f{$\pm0.08$} & 4.8 \f{$\pm1.4$} & \textbf{7} \\
+& & clique &{0.215}  \f{$\pm0.08$} & 6.7 \f{$\pm1.3$} & 0 \\
+& & sqrt &{0.202}  \f{$\pm0.06$} & 8.2 \f{$\pm1.5$} & 0 \\
+& & $x^{0.9}$ &{0.207}  \f{$\pm0.06$} & \textbf{4.6} \f{$\pm0.6$} & 3 \\
+\midrule wolfram-mathematica & 3478 & $\delta$-linear &{0.582}  \f{$\pm0.04$} & \textbf{4.5} \f{$\pm1.0$} & 2 \\
+& & clique &\textbf{0.586}  \f{$\pm0.05$} & 6.9 \f{$\pm0.7$} & 3 \\
+& & sqrt &{0.381}  \f{$\pm0.04$} & 9.2 \f{$\pm2.1$} & 0 \\
+& & $x^{0.9}$ &{0.534}  \f{$\pm0.13$} & 5.3 \f{$\pm0.8$} & \textbf{5} \\
+\midrule aem & 3506 & $\delta$-linear &{0.535}  \f{$\pm0.07$} & 25.4 \f{$\pm27.1$} & 1 \\
+& & clique &\textbf{0.545}  \f{$\pm0.1$} & 24.4 \f{$\pm21.8$} & \textbf{7} \\
+& & sqrt &{0.324}  \f{$\pm0.14$} & 31.8 \f{$\pm23.1$} & 0 \\
+& & $x^{0.9}$ &{0.513}  \f{$\pm0.12$} & \textbf{19.9} \f{$\pm17.5$} & 2 \\
+\bottomrule \end{tabular}
+\end{table} 
+\begin{table}[t]
+    	\caption{Results for Stackoverflow clusters from size 3620 to size 5476.}
+    	\label{tab:stackmore3}
+    	\centering
+    	\begin{tabular}{l l l l l l}
+    		\toprule
+    		Cluster & Size & Penalty & F1 & Runtime  &\# Best \\
+\midrule sparql & 3620 & $\delta$-linear &{0.438}  \f{$\pm0.03$} & \textbf{8.6} \f{$\pm4.2$} & 0 \\
+& & clique &{0.446}  \f{$\pm0.09$} & 9.9 \f{$\pm1.8$} & 3 \\
+& & sqrt &{0.419}  \f{$\pm0.04$} & 10.5 \f{$\pm3.6$} & 1 \\
+& & $x^{0.9}$ &\textbf{0.501}  \f{$\pm0.06$} & 8.7 \f{$\pm2.3$} & \textbf{6} \\
+\midrule codenameone & 3677 & $\delta$-linear &{0.898}  \f{$\pm0.02$} & \textbf{15.6} \f{$\pm9.7$} & \textbf{4} \\
+& & clique &\textbf{0.898}  \f{$\pm0.02$} & 20.4 \f{$\pm12.2$} & 4 \\
+& & sqrt &{0.713}  \f{$\pm0.11$} & 24.7 \f{$\pm19.9$} & 0 \\
+& & $x^{0.9}$ &{0.897}  \f{$\pm0.02$} & 18.8 \f{$\pm10.9$} & 2 \\
+\midrule vhdl & 4135 & $\delta$-linear &{0.572}  \f{$\pm0.05$} & \textbf{8.2} \f{$\pm6.4$} & 1 \\
+& & clique &\textbf{0.63}  \f{$\pm0.03$} & 10.9 \f{$\pm6.8$} & \textbf{5} \\
+& & sqrt &{0.415}  \f{$\pm0.03$} & 13.8 \f{$\pm5.9$} & 0 \\
+& & $x^{0.9}$ &{0.621}  \f{$\pm0.04$} & 8.5 \f{$\pm5.1$} & 4 \\
+\midrule verilog & 4153 & $\delta$-linear &{0.479}  \f{$\pm0.02$} & \textbf{6.4} \f{$\pm1.7$} & 1 \\
+& & clique &{0.519}  \f{$\pm0.04$} & 8.2 \f{$\pm1.2$} & 1 \\
+& & sqrt &{0.398}  \f{$\pm0.07$} & 9.6 \f{$\pm2.2$} & 0 \\
+& & $x^{0.9}$ &\textbf{0.528}  \f{$\pm0.05$} & 7.1 \f{$\pm1.0$} & \textbf{8} \\
+\midrule racket & 4188 & $\delta$-linear &{0.28}  \f{$\pm0.11$} & \textbf{4.0} \f{$\pm0.7$} & 1 \\
+& & clique &\textbf{0.347}  \f{$\pm0.14$} & 6.0 \f{$\pm1.0$} & \textbf{7} \\
+& & sqrt &{0.295}  \f{$\pm0.13$} & 8.6 \f{$\pm1.9$} & 1 \\
+& & $x^{0.9}$ &{0.259}  \f{$\pm0.14$} & 4.7 \f{$\pm0.6$} & 1 \\
+\midrule xslt-1.0 & 4480 & $\delta$-linear &{0.2}  \f{$\pm0.05$} & 5.5 \f{$\pm1.4$} & \textbf{5} \\
+& & clique &\textbf{0.2}  \f{$\pm0.05$} & 6.9 \f{$\pm1.2$} & 2 \\
+& & sqrt &{0.193}  \f{$\pm0.04$} & 8.7 \f{$\pm2.5$} & 1 \\
+& & $x^{0.9}$ &{0.193}  \f{$\pm0.04$} & \textbf{4.7} \f{$\pm0.8$} & 2 \\
+\midrule common-lisp & 4632 & $\delta$-linear &{0.237}  \f{$\pm0.11$} & \textbf{4.3} \f{$\pm0.8$} & 0 \\
+& & clique &\textbf{0.414}  \f{$\pm0.09$} & 5.9 \f{$\pm0.7$} & \textbf{10} \\
+& & sqrt &{0.258}  \f{$\pm0.07$} & 8.5 \f{$\pm2.4$} & 0 \\
+& & $x^{0.9}$ &{0.166}  \f{$\pm0.11$} & 5.4 \f{$\pm0.6$} & 0 \\
+\midrule sapui5 & 4746 & $\delta$-linear &{0.612}  \f{$\pm0.09$} & 23.8 \f{$\pm23.3$} & 2 \\
+& & clique &\textbf{0.642}  \f{$\pm0.06$} & 27.6 \f{$\pm25.0$} & \textbf{7} \\
+& & sqrt &{0.385}  \f{$\pm0.12$} & 39.7 \f{$\pm29.0$} & 0 \\
+& & $x^{0.9}$ &{0.617}  \f{$\pm0.08$} & \textbf{22.8} \f{$\pm19.9$} & 1 \\
+\midrule xpages & 4818 & $\delta$-linear &{0.796}  \f{$\pm0.05$} & \textbf{35.5} \f{$\pm19.0$} & 2 \\
+& & clique &{0.793}  \f{$\pm0.06$} & 36.0 \f{$\pm19.4$} & 2 \\
+& & sqrt &{0.655}  \f{$\pm0.13$} & 53.1 \f{$\pm29.9$} & 1 \\
+& & $x^{0.9}$ &\textbf{0.808}  \f{$\pm0.06$} & 37.4 \f{$\pm21.2$} & \textbf{5} \\
+\midrule openerp & 4884 & $\delta$-linear &{0.406}  \f{$\pm0.1$} & 8.4 \f{$\pm5.3$} & 2 \\
+& & clique &\textbf{0.429}  \f{$\pm0.14$} & 9.6 \f{$\pm4.1$} & \textbf{6} \\
+& & sqrt &{0.295}  \f{$\pm0.09$} & 15.5 \f{$\pm5.9$} & 0 \\
+& & $x^{0.9}$ &{0.393}  \f{$\pm0.16$} & \textbf{8.2} \f{$\pm3.0$} & 2 \\
+\midrule julia & 5295 & $\delta$-linear &{0.624}  \f{$\pm0.08$} & \textbf{8.9} \f{$\pm2.7$} & 3 \\
+& & clique &\textbf{0.653}  \f{$\pm0.05$} & 11.3 \f{$\pm3.0$} & 3 \\
+& & sqrt &{0.376}  \f{$\pm0.05$} & 19.1 \f{$\pm4.2$} & 0 \\
+& & $x^{0.9}$ &{0.627}  \f{$\pm0.07$} & 9.4 \f{$\pm1.4$} & \textbf{4} \\
+\midrule sitecore & 5476 & $\delta$-linear &{0.543}  \f{$\pm0.18$} & 19.9 \f{$\pm19.1$} & 1 \\
+& & clique &\textbf{0.595}  \f{$\pm0.13$} & 17.4 \f{$\pm13.2$} & \textbf{9} \\
+& & sqrt &{0.322}  \f{$\pm0.13$} & 30.3 \f{$\pm21.3$} & 0 \\
+& & $x^{0.9}$ &{0.441}  \f{$\pm0.24$} & \textbf{14.3} \f{$\pm12.7$} & 0 \\
+\bottomrule \end{tabular}
+\end{table} 
+\begin{table}[t]
+    	\caption{Results for Stackoverflow clusters from size 5536 to size 9859.}
+    	\label{tab:stackmore4}
+    	\centering
+    	\begin{tabular}{l l l l l l}
+    		\toprule
+    		Cluster & Size & Penalty & F1 & Runtime  &\# Best \\
+\midrule ibm-mobilefirst & 5536 & $\delta$-linear &{0.825}  \f{$\pm0.02$} & \textbf{52.1} \f{$\pm37.6$} & 2 \\
+& & clique &\textbf{0.828}  \f{$\pm0.02$} & 58.5 \f{$\pm42.0$} & \textbf{4} \\
+& & sqrt &{0.63}  \f{$\pm0.09$} & 80.9 \f{$\pm48.0$} & 0 \\
+& & $x^{0.9}$ &{0.825}  \f{$\pm0.03$} & 57.3 \f{$\pm38.4$} & 4 \\
+\midrule ocaml & 5590 & $\delta$-linear &\textbf{0.601}  \f{$\pm0.02$} & \textbf{6.6} \f{$\pm1.4$} & \textbf{4} \\
+& & clique &{0.591}  \f{$\pm0.04$} & 9.1 \f{$\pm1.9$} & 3 \\
+& & sqrt &{0.346}  \f{$\pm0.04$} & 9.4 \f{$\pm2.7$} & 0 \\
+& & $x^{0.9}$ &{0.59}  \f{$\pm0.04$} & 7.0 \f{$\pm0.8$} & 3 \\
+\midrule spring-integration & 5635 & $\delta$-linear &{0.691}  \f{$\pm0.0$} & 7.7 \f{$\pm2.4$} & 0 \\
+& & clique &\textbf{0.691}  \f{$\pm0.0$} & 12.0 \f{$\pm3.3$} & \textbf{8} \\
+& & sqrt &{0.65}  \f{$\pm0.06$} & 17.9 \f{$\pm5.4$} & 1 \\
+& & $x^{0.9}$ &{0.69}  \f{$\pm0.0$} & \textbf{7.4} \f{$\pm1.3$} & 1 \\
+\midrule tcl & 5752 & $\delta$-linear &\textbf{0.527}  \f{$\pm0.12$} & \textbf{5.2} \f{$\pm0.9$} & \textbf{8} \\
+& & clique &{0.436}  \f{$\pm0.15$} & 7.6 \f{$\pm1.5$} & 2 \\
+& & sqrt &{0.372}  \f{$\pm0.06$} & 11.4 \f{$\pm3.1$} & 0 \\
+& & $x^{0.9}$ &{0.333}  \f{$\pm0.2$} & 6.3 \f{$\pm1.1$} & 0 \\
+\midrule mule & 5940 & $\delta$-linear &{0.603}  \f{$\pm0.15$} & 11.8 \f{$\pm11.3$} & 1 \\
+& & clique &\textbf{0.642}  \f{$\pm0.12$} & 13.6 \f{$\pm9.1$} & \textbf{9} \\
+& & sqrt &{0.365}  \f{$\pm0.05$} & 19.5 \f{$\pm9.7$} & 0 \\
+& & $x^{0.9}$ &{0.577}  \f{$\pm0.16$} & \textbf{11.8} \f{$\pm8.7$} & 0 \\
+\midrule scheme & 6411 & $\delta$-linear &{0.247}  \f{$\pm0.1$} & 6.0 \f{$\pm1.4$} & 2 \\
+& & clique &\textbf{0.36}  \f{$\pm0.07$} & 8.4 \f{$\pm2.3$} & \textbf{5} \\
+& & sqrt &{0.329}  \f{$\pm0.04$} & 9.6 \f{$\pm1.8$} & 2 \\
+& & $x^{0.9}$ &{0.283}  \f{$\pm0.11$} & \textbf{5.4} \f{$\pm1.4$} & 1 \\
+\midrule typo3 & 6414 & $\delta$-linear &{0.646}  \f{$\pm0.09$} & 49.3 \f{$\pm37.6$} & 1 \\
+& & clique &\textbf{0.664}  \f{$\pm0.07$} & 41.7 \f{$\pm29.1$} & \textbf{7} \\
+& & sqrt &{0.473}  \f{$\pm0.1$} & 52.9 \f{$\pm28.2$} & 0 \\
+& & $x^{0.9}$ &{0.643}  \f{$\pm0.08$} & \textbf{37.5} \f{$\pm24.3$} & 2 \\
+\midrule cypher & 6735 & $\delta$-linear &{0.547}  \f{$\pm0.02$} & 14.3 \f{$\pm2.8$} & 2 \\
+& & clique &\textbf{0.553}  \f{$\pm0.01$} & 13.9 \f{$\pm1.9$} & \textbf{7} \\
+& & sqrt &{0.5}  \f{$\pm0.03$} & 20.7 \f{$\pm5.7$} & 0 \\
+& & $x^{0.9}$ &{0.538}  \f{$\pm0.04$} & \textbf{12.6} \f{$\pm1.7$} & 1 \\
+\midrule wso2 & 7760 & $\delta$-linear &{0.559}  \f{$\pm0.07$} & 17.7 \f{$\pm12.0$} & 2 \\
+& & clique &\textbf{0.577}  \f{$\pm0.05$} & 18.6 \f{$\pm13.7$} & \textbf{6} \\
+& & sqrt &{0.313}  \f{$\pm0.07$} & 30.4 \f{$\pm12.9$} & 0 \\
+& & $x^{0.9}$ &{0.561}  \f{$\pm0.07$} & \textbf{17.0} \f{$\pm13.0$} & 2 \\
+\midrule data.table & 8108 & $\delta$-linear &{0.114}  \f{$\pm0.01$} & 5.0 \f{$\pm0.9$} & 0 \\
+& & clique &{0.148}  \f{$\pm0.04$} & 5.9 \f{$\pm1.3$} & \textbf{7} \\
+& & sqrt &{0.156}  \f{$\pm0.02$} & 16.2 \f{$\pm4.2$} & 0 \\
+& & $x^{0.9}$ &\textbf{0.163}  \f{$\pm0.02$} & \textbf{4.7} \f{$\pm0.2$} & 3 \\
+\midrule prolog & 9086 & $\delta$-linear &\textbf{0.644}  \f{$\pm0.02$} & 11.7 \f{$\pm3.7$} & \textbf{7} \\
+& & clique &{0.638}  \f{$\pm0.03$} & 11.6 \f{$\pm1.5$} & 1 \\
+& & sqrt &{0.44}  \f{$\pm0.03$} & 17.1 \f{$\pm3.8$} & 0 \\
+& & $x^{0.9}$ &{0.626}  \f{$\pm0.04$} & \textbf{8.8} \f{$\pm1.1$} & 2 \\
+\midrule google-bigquery & 9859 & $\delta$-linear &{0.352}  \f{$\pm0.19$} & \textbf{7.7} \f{$\pm2.8$} & 1 \\
+& & clique &\textbf{0.486}  \f{$\pm0.11$} & 10.0 \f{$\pm2.9$} & \textbf{8} \\
+& & sqrt &{0.228}  \f{$\pm0.07$} & 18.4 \f{$\pm3.6$} & 0 \\
+& & $x^{0.9}$ &{0.387}  \f{$\pm0.18$} & 9.4 \f{$\pm1.9$} & 1 \\
+\bottomrule \end{tabular}
+\end{table} 
