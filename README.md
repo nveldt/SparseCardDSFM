@@ -1,9 +1,10 @@
 # SparseCard
 
-Code for approximate graph reduction techniques for cardinality-based DSFM, to accompany submission:
+Code for approximate graph reduction techniques for cardinality-based DSFM, from paper 
 
-"Approximate Decomposable Submodular Function Minimization for Cardinality-Based Components"
-Anonymous NeurIPS 2021 submission.
+"Augmented Sparsifiers for Generalized Hypergraph Cuts with Applications to Decomposable Submodular Function Minimization"
+
+https://arxiv.org/abs/2007.08075
 
 The `include` folder contains implementations for outside code needed for experimental comparisons.
 
