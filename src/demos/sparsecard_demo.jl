@@ -1,11 +1,13 @@
 using SparseArrays
 
-include("../src/hypergraphs.jl")
-include("../src/read_data.jl")
-include("../src/SparseCard.jl")
-include("../src/pwl_approx.jl")
+include("../hypergraphs.jl")
+include("../SparseCard.jl")
+include("../pwl_approx.jl")
 
-show_datasets()
+## The HyperModualrity package includes a number of hypergraph datasets we can use for testing
+using HyperModularity 
+hypermodularity_datasets() 
+
 ## Load dataset and solve
 dataset = "contact-primary-school-classes"
 # dataset = "mathoverflow-answers"
@@ -13,14 +15,15 @@ maxsize = 25	# max hyperedge size
 minsize = 2	# min hyperedge size
 return_labels = true
 Edges, Labels = read_hypergraph_data(dataset,maxsize,minsize,return_labels)
-pb = [0.2;0.2]
+pb = 0.2:0.1:0.3
 EdgesW = RandomSplittingFunctions(Edges,pb)
 P = sortperm(Labels)
 n = length(Labels)
 refined = false
 epsilon = 0.1*ones(maxsize)
 
-# Solve the problem with two different max-flow subroutines
+
+## Solve the problem with two different max-flow subroutines
 eS_pr, cutval_pr, approx_pr, flowtime_pr, reduce_time, worst_eps = SparseCard(Edges,EdgesW,n,epsilon;refined = false)
 eS_gur, cutval_gur, approx_gur,flowtime_gur, reduce_time, worst_eps = SparseCard(Edges,EdgesW,n,epsilon;flowsolver = "gurobi")
 

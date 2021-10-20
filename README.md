@@ -2,9 +2,9 @@
 
 Code for approximate graph reduction techniques for cardinality-based DSFM, from paper 
 
-"Augmented Sparsifiers for Generalized Hypergraph Cuts with Applications to Decomposable Submodular Function Minimization"
+"Approximate Decomposable Submodular Function Minimization for Cardinality-Based Components"
 
-https://arxiv.org/abs/2007.08075
+Nate Veldt, Austin Benson, Jon Kleinberg. NeurIPS 2021.
 
 The `include` folder contains implementations for outside code needed for experimental comparisons.
 
