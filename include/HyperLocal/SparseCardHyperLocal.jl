@@ -57,7 +57,7 @@ function SparseCardHyperLocal(H::SparseMatrixCSC{Float64,Int64},Ht::SparseMatrix
 
     else
         # A = tl_expansion_inc(H,order,delta)
-        A = SymmetricCard_reduction(Edges,EdgesW,n,epsilon,false)
+        A = SymmetricCard_reduction(Edges,EdgesW,n,sparsityeps,false)
         N = round(Int64,size(A,1))
     end
 
